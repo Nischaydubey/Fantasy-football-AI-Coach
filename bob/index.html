@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Fantasy Football AI Coach</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: linear-gradient(135deg, #c0f7ff, #ffffff);
+      overflow-x: hidden;
+    }
+
+    .main-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .chat-header {
+      text-align: center;
+      font-size: 2.2em;
+      color: #4f46e5;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .chat-iframe-wrapper {
+      height: 600px;
+      border: 3px dashed #aaa;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .fake-chatbot {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 250px;
+      height: 300px;
+      background-color: #fdf6e3;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 0.9em;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: float 3s ease-in-out infinite;
+      z-index: 999;
+    }
+
+    .fake-chatbot h4 {
+      margin: 0 0 10px 0;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    .fake-message {
+      margin: 6px 0;
+      padding: 8px;
+      background: #eeeeee;
+      border-radius: 10px;
+    }
+
+    .useless-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      font-size: 1em;
+      background: #ff8a65;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .useless-button:hover {
+      background: #ff7043;
+      transform: rotate(3deg);
+    }
+
+    .progress-bar {
+      width: 100%;
+      background-color: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .progress {
+      height: 20px;
+      width: 0%;
+      background-color: #4caf50;
+      text-align: center;
+      line-height: 20px;
+      color: white;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="chat-header">
+      ⚽ The Ultimate Fantasy Football AI Coach Experience ⚽
+    </div>
+
+    <!-- Real Chatbase Bot -->
+    <div class="chat-iframe-wrapper">
+      <iframe 
+        src="https://www.chatbase.co/chatbot-iframe/UBmL2Fg1Ewl3g_lkTAgrS" 
+        title="Fantasy Football Chatbot"
+        allow="clipboard-write; microphone"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Useless UI -->
+    <div style="text-align:center; margin-top: 30px;">
+      <button class="useless-button" onclick="launchRocket()">Launch 🚀</button>
+      <button class="useless-button" onclick="openPopup()">Open Popup</button>
+      <button class="useless-button" onclick="startProgress()">Start Progress</button>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress" id="progressBar">0%</div>
+    </div>
+  </div>
+
+  <!-- Even More Pointless JavaScript -->
+  <script>
+    function launchRocket() {
+      alert("🚀 Rocket launched! (Just kidding.)");
+      console.log("A fake rocket has been launched into your imagination.");
+    }
+
+    function openPopup() {
+      const popup = window.open("", "popup", "width=400,height=300");
+      popup.document.write("<h1>This popup is so pointless.</h1><p>But hey, now it's open.</p>");
+    }
+
+    function startProgress() {
+      let width = 0;
+      const bar = document.getElementById("progressBar");
+      const interval = setInterval(() => {
+        if (width >= 100) {
+          clearInterval(interval);
+          bar.innerHTML = "Done!";
+        } else {
+          width++;
+          bar.style.width = width + "%";
+          bar.innerHTML = width + "%";
+        }
+      }, 50);
+    }
+
+    setTimeout(() => {
+      console.log("⏰ You’ve been on this page for 5 seconds. That’s dedication.");
+    }, 5000);
+
+    document.addEventListener("mousemove", (e) => {
+      if (e.clientY < 50) {
+        console.log("👀 Hey! Are you trying to leave?");
+      }
+    });
+  </script>
+</body>
+</html>

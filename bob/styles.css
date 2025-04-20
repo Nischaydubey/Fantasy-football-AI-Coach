@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Lionel_Messi_20180626.jpg'),
+                url('https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg');
+    background-size: cover;
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+  }
+  
+  .main-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .chat-header {
+    text-align: center;
+    font-size: 2.2em;
+    color: #4f46e5;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .chat-iframe-wrapper {
+    height: 600px;
+    border: 3px dashed #aaa;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .fake-chatbot {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    height: 300px;
+    background-color: #fdf6e3;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 0.9em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: float 3s ease-in-out infinite;
+    z-index: 999;
+  }
+  
+  .fake-chatbot h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
+  .fake-message {
+    margin: 6px 0;
+    padding: 8px;
+    background: #eeeeee;
+    border-radius: 10px;
+  }
+  
+  .useless-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    background: #ff8a65;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .useless-button:hover {
+    background: #ff7043;
+    transform: rotate(3deg);
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .progress {
+    height: 20px;
+    width: 0%;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
